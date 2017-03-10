@@ -5,7 +5,8 @@ const config = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'build'),  //node helper to find absolute path and will create a folder called build
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: 'build/'
   },
   module: {       // loader system
     rules: [      // 
